@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Clair_SampleApp",
+  "ProjectGuid": "ca06ed5a-b030-4294-a326-b7788d2a383e",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.ClairSampleApp",
+  "DisplayName": "Clair_SampleApp",
+  "Author": "",
+  "Description": "Clair_SampleApp",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{d52ad80c-f173-4971-b54a-306673a498f5}",
+  "WP8ProductID": "{2e49414f-fa42-4f1b-a4f5-f0508ddf42fc}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.ClairSampleApp",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
