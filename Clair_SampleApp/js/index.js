@@ -39,6 +39,13 @@ var app = {
         app.receivedEvent('deviceready');
 
         document.getElementById('sparta').innerHTML = 'looking for beacons';
+        
+        if(typeof OnyxbeaconPhonegap){
+            alert("Detecting the plugin");
+        }else {
+            alert("Not detecting the plugin");
+        }
+        
         document.addEventListener('beaconsReceived', app.onBeaconsReceived, false);
         document.addEventListener('notificationReceived', app.notificationReceived, false);
 
@@ -50,9 +57,19 @@ var app = {
         console.log('Received Event: ' + id);
     },
     onBeaconsReceived: function(result){
+        if(!result){
+            alert("content empty");
+        }else{
+            alert("Message is there "+ JSON.stringify(result));
+        }
         document.getElementById('sparta').innerHTML = JSON.stringify(result);
     },
     notificationReceived: function(msg){
-        document.getElementById('sparta').innerHTML = JSON.stringify(msg);
+        if(!msg){
+            alert("content empty");
+        }else{
+            alert("Message is there "+ JSON.stringify(msg));
+        }
+        //document.getElementById('sparta').innerHTML = JSON.stringify(msg);
     }
 };

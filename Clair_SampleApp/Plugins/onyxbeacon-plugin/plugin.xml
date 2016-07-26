@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		id="cordova-plugin-onyxbeacon"
+		version="0.1.0">
+
+	<name>OnyxbeaconPhonegap</name>
+	<description>Phonegap/Cordova Plugin for OnyxBeacon</description>
+	<license>MIT</license>
+	<keywords>Onyx,Beacons</keywords>
+
+	<js-module src="www/onyxbeacon.js" name="OnyxbeaconPhonegap">
+		<clobbers target="OnyxbeaconPhonegap" />
+	</js-module>
+	<platform name="android">
+		<!-- android-specific elements -->
+		
+	
+		
+	</platform>
+
+
+	<platform name="ios">
+		<framework src="frameworks/OnyxBeaconLib.framework" custom="true" />
+
+		<config-file target="config.xml" parent="/*">
+			<feature name="OnyxbeaconPhonegap">
+				<param name="ios-package" value="OnyxbeaconPhonegap"/>
+			</feature>
+		</config-file>
+		
+		<header-file src="src/ios/AFOAuth2Client.h" />
+		<source-file src="src/ios/AFOAuth2Client.m" />
+		<header-file src="src/ios/OnyxbeaconPhonegap.h" />
+		<source-file src="src/ios/OnyxbeaconPhonegap.m" />
+		<header-file src="src/ios/AppDelegate+notification.h" />
+		<source-file src="src/ios/AppDelegate+notification.m" />
+
+		<dependency id="cordova-plugin-afnetworking" />
+	</platform>
+
+</plugin>
